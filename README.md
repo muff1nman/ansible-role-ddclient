@@ -12,7 +12,7 @@ OS currently supported by role:
 Role Variables
 --------------
 
-you  MUST DEFINED onr of theses 3 :
+*you  MUST DEFINE one of theses :
 
 * ddclient_use_ip: ''         
 with static ip
@@ -23,7 +23,24 @@ web url to get the ip
 * ddclient_use_if: ''         
 which interface used to get the ip
 
+*Others options that alos MUST BE DEFINED :
+* ddclient_protocol: ''      
+which dydns protocol
 
+* ddclient_login: ''         
+user used to connect
+
+* ddclient_password: ''       
+password used to connect
+
+* ddclient_server: ''         
+server on which to connect to do ddns operation
+
+* ddclient_ddns_records: []   
+which records to update
+
+
+*Theses are default options that can be overriden :
 * ddclient_period: 600
 seconds between run
 
@@ -41,21 +58,6 @@ if need ssl support to connect to a service
 
 * ddclient_use_web_skip: ''   
 this is an option in case ddclient_use_web is used, if defined, skip this string to get the ip
-
-* ddclient_protocol: ''      
-which dydns protocol, MUST BE DEFINED !!
-
-* ddclient_login: ''         
-user used to connect, MUST BE DEFINED !!
-
-* ddclient_password: ''       
-password used to connect, MUST BE DEFINED !!
-
-* ddclient_server: ''         
-server on which to connect to do ddns operation, MUST BE DEFINED !!
-
-* ddclient_ddns_records: ''   
-which records to update, MUST BE DEFINED !!
 
 * ddclient_mx: ''             
 if defined ,use it as mx for the host, this has to be supported by the dyn hoster...
