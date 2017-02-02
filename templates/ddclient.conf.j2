@@ -11,14 +11,14 @@ ssl={{ 'yes' if ddclient_ssl_support else 'no' }}
 postscript={{ ddclient_script }}
 {% endif %}
 
-{% if ddclient_use_ip %}
+{% if ddclient_method == 'ip' %}
 use=ip, ip={{ ddclient_use_ip }}
 {% endif %}
-{% if ddclient_use_web %}
-use=web, web={{ ddclient_use_web }}{% if ddclient_use_web_skip %}, web-skip='{{ ddclient_use_web_skip }}'{% endif %}
+{% if ddclient_method == 'web' %}
+use=web, {% if ddclient_web_url != '' %}web={{ ddclient_web_url }}{% if ddclient_use_web_skip %}, web-skip='{{ ddclient_use_web_skip }}'{% endif %}{% endif %}
 
 {% endif %}
-{% if ddclient_use_if %}
+{% if ddclient_method == 'if' %}
 use=if, if={{ ddclient_use_if }}
 {% endif %}
 protocol={{ ddclient_protocol }}
