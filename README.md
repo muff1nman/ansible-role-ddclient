@@ -6,8 +6,8 @@ install and configure ddclient to do dynamic dns update
 Requirements
 ------------
 
-OS currently supported by role:
-- OpenBSD
+- OpenBSD (tested on 6.0-RELEASE)
+- FreeBSD (not tested)
 
 Role Variables
 --------------
