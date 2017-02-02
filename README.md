@@ -56,7 +56,7 @@ mail failed update to this user
 if need ssl support to connect to a service
 
 * ddclient_use_web_skip: ''   
-this is an option in case ddclient_use_web is used, if defined, skip this string to get the ip
+this is an option in case ddclient_method:'web' is used, if defined, skip this string to get the ip
 
 * ddclient_mx: ''             
 if defined ,use it as mx for the host, this has to be supported by the dyn hoster...
