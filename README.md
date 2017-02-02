@@ -11,19 +11,19 @@ OS currently supported by role:
 
 Role Variables
 --------------
-
-*you  MUST DEFINE one of theses :
+ddclient_method: 'web'
+can be either 'web' or 'if' or 'ip'
 
 * ddclient_use_ip: ''         
-with static ip
+with the correct static ip, REQUIRED when ddclient_method: 'ip'
 
-* ddclient_use_web: ''	    
-web url to get the ip
+* ddclient_web_url: ''	    
+web url to get the ip, if ddclient_method: 'web'
 
 * ddclient_use_if: ''         
-which interface used to get the ip
+which interface used to get the ip, REQUIRED when ddclient_method: 'if'
 
-*Others options that alos MUST BE DEFINED :
+*Others options that also MUST BE DEFINED :*
 * ddclient_protocol: ''      
 which dydns protocol
 
@@ -39,8 +39,7 @@ server on which to connect to do ddns operation
 * ddclient_ddns_records: []   
 which records to update
 
-
-*Theses are default options that can be overriden :
+*Theses are default options that can be overriden :*
 * ddclient_period: 600
 seconds between run
 
@@ -79,8 +78,15 @@ None
 Example Playbook
 ----------------
 
-TODO 
-
+- hosts:  ddclient_server
+  vars:
+    ddclient_method: web
+    ddclient_protocol: dyndns2 
+    ddclient_server: members.dyndns.org
+    ddclient_login: 'mydyndns_id'
+    ddclient_password: 'mydyndns_pwd'
+    ddclient_ddns_records: ['myhost.dyndns-mydomain.xyz' ]
+    
 License
 -------
 
