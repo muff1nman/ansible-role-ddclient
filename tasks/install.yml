@@ -1,0 +1,10 @@
+---
+- name: Install required packages (OpenBSD)
+  openbsd_pkg: name={{ item }} state=present
+  with_items: [ 'ddclient--' ]
+  when: ansible_os_family == 'OpenBSD'
+
+- name: Install required packages (FreeBSD)
+  pkgng: name={{ item }} state=present
+  with_items: [ 'ddclient' ]
+  when: ansible_os_family == 'FreeBSD'
