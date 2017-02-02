@@ -1,14 +1,13 @@
 galaxy_info:
-  author: your name
-  description: your description
-  company: your company (optional)
-
+  author: Brice C
+  description: tbc
+  
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
   # issue_tracker_url: http://example.com/issue/tracker
 
   # Some suggested licenses:
-  # - BSD (default)
+   - BSD (default)
   # - MIT
   # - GPLv2
   # - GPLv3
@@ -38,8 +37,8 @@ galaxy_info:
   #  - 5.6
   #  - 5.7
   #  - 5.8
-  #  - 5.9
-  #  - 6.0
+    - 5.9
+    - 6.0
   #- name: Fedora
   #  versions:
   #  - all
@@ -113,8 +112,8 @@ galaxy_info:
   #  - 10.0
   #  - 10.1
   #  - 10.2
-  #  - 10.3
-  #  - 11.0
+    - 10.3
+    - 11.0
   #  - 8.0
   #  - 8.1
   #  - 8.2
@@ -215,7 +214,7 @@ galaxy_info:
     #
     # NOTE: A tag is limited to a single word comprised of
     # alphanumeric characters. Maximum 20 tags per role.
-
+    ddclient
 dependencies: []
   # List your role dependencies here, one per line.
   # Be sure to remove the '[]' above if you add dependencies
