@@ -77,7 +77,7 @@ None
 
 Example Playbook
 ----------------
-
+```yaml
 - hosts:  ddclient_server
   vars:
     ddclient_method: web
@@ -86,7 +86,8 @@ Example Playbook
     ddclient_login: 'mydyndns_id'
     ddclient_password: 'mydyndns_pwd'
     ddclient_ddns_records: ['myhost.dyndns-mydomain.xyz' ]
-    
+```
+
 License
 -------
 
