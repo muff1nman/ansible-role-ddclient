@@ -11,7 +11,7 @@ OS currently supported by role:
 
 Role Variables
 --------------
-* ddclient_method: 'web'
+* ddclient_method: 'web'  
 can be either 'web' or 'if' or 'ip'
 
 * ddclient_use_ip: ''         
