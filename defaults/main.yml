@@ -27,3 +27,5 @@ ddclient_wildcard: no       # yes or no, if enabled add a  * CNAME to your host
 ddclient_pid: '/var/run/ddclient.pid'
 ddclient_config: '/etc/ddclient.conf'
 ddclient_service_name: 'ddclient'
+ddclient_group: 'root'
+ddclient_user: 'root'
