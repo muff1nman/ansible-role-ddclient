@@ -9,6 +9,7 @@ Requirements
 Supported OS :
 - OpenBSD (tested on 6.0)
 - FreeBSD (not tested, but should be ok if binary packages can be used)
+- Fedora
 
 Role Variables
 --------------
@@ -43,6 +44,7 @@ ddclient_wildcard: no       # yes or no, if enabled add a  * CNAME to your host
 ddclient_pid: '/var/run/ddclient.pid'
 ddclient_config: '/etc/ddclient.conf'
 ddclient_service_name: 'ddclient'
+ddclient_pkg: 'ddclient'
 ```
 
 Dependencies

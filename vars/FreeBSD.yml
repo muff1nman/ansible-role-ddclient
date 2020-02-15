@@ -1,3 +1,4 @@
 ---
 ddclient_group: 'wheel'
 ddclient_config: '/usr/local/etc/ddclient.conf'
+ddclient_pkg: ddclient

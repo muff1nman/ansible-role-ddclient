@@ -3,3 +3,4 @@ ddclient_config: '/etc/ddclient/ddclient.conf'
 ddclient_pid: '/var/run/ddclient/ddclient.pid'
 ddclient_user: _ddclient
 ddclient_group: _ddclient
+ddclient_pkg: 'ddclient--'
